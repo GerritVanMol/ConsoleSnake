@@ -1,0 +1,27 @@
+1.) Make opbsticles (inherit from snack class)
+
+2.) Make choise menu
+
+3.) keep list of players and scores
+
+4.) Save list of players and scores to doc file
+
+5.) Implement exceptions where needed
+
+6.) menu with events ?
+
+//comments 
+
+  //linq expression ??
+                //if (new string[] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
+                //    "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" }.Any(name => value.Contains(name)))
+                //{
+                //value.Any(name => !char.IsPunctuation(name))
+
+
+                //Did not know i needid this private fied to hold the value and prevent recursion wich couses a stackoverflow(some googling did the trick)
+
+
+
+                //IEnumerable alphabet = new string[] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
+        //            "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };

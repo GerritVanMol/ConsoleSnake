@@ -1,0 +1,65 @@
+﻿C# OO - verslag codereview
+==========================
+
+Naam reviewer:	Robbe Heynderickx
+Datum review:  05/10/2020
+
+Beoordeelde code
+----------------
+
+Auteur: Gerrit Van Mol
+Titel: Snake
+Datum code: 04/10/2020
+
+
+Programmeerstijl
+----------------
+
+<
+Volgt de code de huisregels (minstens voor volgende aspecten):
+
+- naamgeving variabelen (conventies & zinvolle namen) Ja, 
+- naamgeving methodes (conventies & zinvolle namen) Ja, misschien tekort soms
+- layout (gebruik accolades en inspringen) Ja,
+- geen publieke velden (properties waar nodig) Ja,
+- korte methodes (< 25 lijnen), 'single responisbility rule' Ja, want switch case in gui is geen methode
+>
+
+commentaar:
+
+ik denk dat een paar plaatsen overloading kunnen gebruiken.
+
+
+
+Structuur
+---------
+
+grotendeels wel goed buiten het oproepen van aanmaken van objecten van klassen in plaats van die mee te geven met de constructor in GameLogic en Snack.
+
+commentaar:
+
+Er staan soms variabele initialisaties onderaan wanneer er ook in het begin initialisaties staan en dat had ik eerst niet door.
+
+
+Userinterface
+-------------
+
+stack overflow
+
+
+Analyse methode1 & methode 2
+----------------------------
+
+<Kies 2 methodes uit verschillende delen van de code en beoordeel de juistheid  en efficiëntie ervan >
+
+methode 1:  GameLogic GameLogic()
+
+commentaar: er wordt hier een snack object aangemaakt die dan zelf ook een gamelogic aanmaakt wat denk ik niet de bedoeling is, en dan stack overflow veroorzaakt.
+ik denk dat aangezien deze objecten toch apart aangemaakt worden in de presentatie klasse dat die beter gewoon aan elkaar worden overload in de constructor.
+
+methode 2:  GameLogic ResetSnake()
+
+commentaar: er bestaat een Length variable (property) die onderaan aangemaakt wordt. in de ResetSnake() methode wordt die dan aan 0 gelijk gezet
+(om de lengte van de snake te resetten). de "Length" die is aangepast heeft echter geen invloed op de property Length in de snake klasse zelf. het was waarschijnlijk de bedoeling
+dat hier infSnake.Length stond ipv gewoon Length alhoewel ik dan niet weet waarom Length dan nog in de gameLogic klasse zit. Ik zie ook nergens iets dat de Length property 
+van beide klassen beinvloed buiten die reset maar die moet waarschijnlijk nog komen.

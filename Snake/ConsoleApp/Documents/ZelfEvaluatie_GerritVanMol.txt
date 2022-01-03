@@ -1,0 +1,81 @@
+﻿C# OO - zelfevaluatie
+=========================================
+
+Naam:	Gerrit Van Mol
+Datum:  10/20/2020
+Volgnummer blok: 1
+
+Onderwerp: Persoonlijke vooruitgang/inzichten
+
+Stand van zaken: 
+
+Korte beschrijving van de stand van zaken: wat is al gerealiseerd, zit je op plan?:
+
+Momenteel heb ik al kunnen bereiken wat ik in gedachten had. Een functioneel werkende “snake” toepassing in de console. 
+Heb zelf al wat meer naar afwerking kunnen kijken zoals een menu toevoegen en scores opslaan. M
+et het momentele resultaat ben ik al heel blij. 
+
+
+Aandachtspunten in je aanpak:
+
+Op welke punten wil je jezelf bijsturen, anders gaan werken:
+Misschien nog iets anders leren denken van hou je bepaalde dingen best aanpakt of hoe je best aan iets begint. 
+Beginnen aan een project in het algemeen is vaak nog een chaos voor mij, dus moet nog wat bij sturen hoe je best alles op een rijtje zet. 
+Af en toe denk ik ook nog wat te ver voor de soms logische/voor de hand liggende problemen.   
+
+
+Sterke punten:
+
+Sterke punten in je aanpak, in de opbouw van je toepassing:
+Zoals eerder vermeld ben ik nog niet de sterkste op vlak van hoe je best zo een project aanpakt. Maar na wat uitleg van meneer Johan Donné was ik er al wat sneller mee weg. 
+Het project is korter en minder omslachtig dan mijn eerste poging van het project (snake V1). Heb ook tal van methoden leren korter schrijven door de “Message” info in Visual Studio.
+Na zo een toepassing te schrijven in C# is mijn kijk op programmeren veel veranderd (in vergelijking met Java). 
+In de toekomst wil ik er me zeker nog in verdiepen want het is wel leuk!
+
+
+Technische aandachtspunten:
+
+Welke technieken waar je al mee werkt, lukken nog niet goed of begrijp je nog niet:
+Events begrijp ik deels (voor een timer toch), delegats totaal nog niet. 
+Zal nog wat meer onderzoek/demo’s moeten doen om dit onder de knie te krijgen.
+
+Leerdoelen:
+
+Opsomming van de leerdoelen voor dit blok met het niveau waarop je dat doel al verworven hebt:
+ 
+
+ -	Kennismaking Visual Studio 2019 = inzicht
+
+ -	Gebruik GIT	= Toepassing
+
+-	Debugging = Toepassing
+
+-	Programmeerstijl = inzicht
+
+-	Exceptions = toepassing
+
+-	Enumerations = toepassing
+
+-	Properties = toepassing
+
+-	Interpolated strings = toepassing
+
+-	Generic collections = toepassing
+
+-	Interfaces = inzicht
+
+-	Architectuur van een toepassing - Meerlagenmodel = inzicht
+
+-	Bestanden en 'streams' = toepassing
+
+-	'Value' en 'Reference' types, cloning van objecten = inzicht
+
+-	Klassen - klassehiërarchie = inzicht
+
+-	structs = toepassing
+
+-	Lambda expressions = toepassing
+
+-	Language Integrated Query (Linq) = toepassing
+
+-	Events = inzicht

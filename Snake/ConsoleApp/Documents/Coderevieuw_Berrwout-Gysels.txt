@@ -1,0 +1,78 @@
+C# OO - verslag codereview
+==========================
+
+Naam reviewer:	Berwout Gysels
+Datum review:  29/10
+
+Beoordeelde code
+----------------
+
+Auteur: Gerrit Van Mol
+Titel: Snake v2
+Datum code: 19 oktober 2020
+
+
+Programmeerstijl
+----------------
+
+<
+Volgt de code de huisregels (minstens voor volgende aspecten):
+
+- naamgeving variabelen (conventies & zinvolle namen)
+	De naamgevingen van de variabelen zijn overal goed gekozen en geven een duidlijke weergave waarvoor ze dienen.
+
+- naamgeving methodes (conventies & zinvolle namen)
+	De naamgevingen van de methodes zijn overal goed gekozen en geven een duidlijke weergave waarvoor ze dienen.
+- layout (gebruik accolades en inspringen)
+	99 % van de layout is juis. Alleen in IGame is er een kleine misplaatsing van de accolades en inspringenen. Bij CreateGUI 
+	zouden er bij de lange if else statements de accolades weg kunnen gelaten worden als er maar 1 optie is zodat
+ 	er een maximaal van 25 lijnen in de methode staat.
+- geen publieke velden (properties waar nodig)
+	Er worden geen publieke velden gebruikt.
+
+- korte methodes (< 25 lijnen), 'single responisbility rule'
+	3 methodes zijn te lang in CreateGUI. GameLoop() SelectOption() VerifyInput().
+>
+
+commentaar:
+
+	Ik heb geen vragen of commentaar.
+
+
+Structuur
+---------
+
+	De structuur van het programma is mooi opgedeeld in klassen waardoor alles zijn eigen 
+	deeltje heeft waardoor alles makkelijk en proper terug te vinden is.
+
+
+
+Userinterface
+-------------
+
+
+	De userinterface is zeer logisch want je weet direct wat je moet doen, alleen zou ik nog een berichtje
+ 	zetten dat je je naam opnieuw moet ingeven als hij een fout teken bevat want nu is het onduidlijk of je hem opnieuw moet ingeven.
+
+
+Analyse methode1 & methode 2
+----------------------------
+
+
+
+methode 1:  CreateGUI , VerifyInput()
+	Deze methode wordt gebruikt voor het besturen van de snake. Het is zeer goed dat er op gekeken wordt naar
+	 het feit dat de snake niet inzichzelf kan gaan wat voor de speler logisch lijkt maar toch belangrijk is. Deze Methode is echter een beetje omslachtig geschreven.
+	In plaats van met de if else statements die gebruikt worden in een case zou ik een loop functie gebruikt hebben met lijsten die alle opties bevatten van Consolekey en direction
+	en deze zo met elkaar vergelijken.
+
+
+
+methode 2:  CreateGUI , SelectOption()
+	Deze methode wordt gebruikt voor de keuze van de menu te bedienen. Deze methode is wel vrij lang met 40 lijnen deze kan een beetje verkleind worden door bevoorbeeld de opties van if (game.TheMenu.Index == 0)
+	in een andere methode te plaatsen en ook voor het op en neergaan te checken ook in een andere methode. Ook snap ik niet waarom er bij exit naar WriteScores wordt verwezen
+	en niet gewoon Environment.Exit(0); ( ik weet dat dit ook in WriteScores wordt gechreven maar dit heeft het zelfde effect).
+
+
+
+
